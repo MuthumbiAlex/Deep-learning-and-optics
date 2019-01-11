@@ -14,11 +14,19 @@ INSTRUCTIONS
     Change lines 30 and 32 to increase (or decrease) the number of images to be created and saved to file in the script
     alex_microsphere_13.m
 
- 2) Change the location of the file's location to your current directory in the following lines:
+ 2) FOR macOS...
+ 
+ Change the location of the file's location to your current directory in the following lines: 
      - line 234 of microspheres.py script. Change that to a directory where you want to save the training information to visualize in tensorboard.
      - line 298 of mnist_mine.py script. Change that to your current directory.
      
-  3) Run the script microspheres.py in cmd or terminal.
+  3) For Windows...
+   Change the location of the file's location to your current directory in the following lines: 
+     - line 231 of microspheres.py script. Change that to a directory where you want to save the training information to visualize in tensorboard.
+     - line 235 of mnist_mine.py script. Change that to your current directory.
+  
+  
+  Run the script microspheres.py in cmd or terminal.
   
   
   CREDIT:
