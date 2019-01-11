@@ -9,7 +9,10 @@ Deep learning training code to optimize LED illumination of cells in a microscop
 
 INSTRUCTIONS
 
- 1) Put all the codes in same directory, and the data (already in a separate directory) into the same directory as the code.
+ 1) Put all the codes in same directory.
+    
+    Change lines 30 and 32 to increase (or decrease) the number of images to be created and saved to file in the script
+    alex_microsphere_13.m
 
  2) Change the location of the file's location to your current directory in the following lines:
      - line 234 of microspheres.py script. Change that to a directory where you want to save the training information to visualize in tensorboard.
