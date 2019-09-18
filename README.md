@@ -6,6 +6,8 @@ Deep learning training code to optimize LED illumination of cells in a microscop
 
 2) Tensorflow code for learning to recognise the generated microspheres
 
+EXPLANATION.
+The Matlab files are used to generate images of microspheres, and save them to disk. I am simulating here how these microspheres would appear if they are used as samples in a microscope where the illumination unit is replaced by an LED array. Each of the LEDs illuminate the sample independently, and I save all the images from ALL the LEDs as 1 big array. 
 
 INSTRUCTIONS
 
