@@ -8,7 +8,7 @@ Deep learning training code to optimize LED illumination of cells in a microscop
 
 EXPLANATION.
 
-The Matlab files are used to generate images of microspheres, and save them to disk. I am simulating here how these microspheres would appear if they are used as samples in a microscope where the illumination unit is replaced by an 5x5 LED array. Each of the LEDs illuminate the sample independently, and I save all the images from ALL the LEDs as 1 big array. Therefore, each sample "image" that I pass to the CNN has a dimension of 400x400x25. Where the 25 is for saving all the LED images.
+The Matlab files are used to generate images of microspheres, and save them to disk. I am simulating here how these microspheres would appear if they are used as samples in a microscope where the illumination unit is replaced by an 5x5 LED array. Each of the LEDs illuminate the sample independently, and I save all the images from ALL the LEDs as 1 big array. Therefore, each sample "image" that I pass to the CNN has a dimension of 200x200x25. Where the 25 is for saving all the LED images.
 After saving these images, I then preprocess them using the MNIST-mine.py file. In it, I have added a function (read_data_sets_microspheres) that reads in the images from disk, then re-arranges them into a specific format for the CNN file. After this pre-processing, I then pass these images to the microspheres.py file. 
 
 In this file, i put the brightness of each of the 25 LEDs as a variable parameter, and it is learnt on top of classifying the nuumber of spheres in the files. The LED parameter is a physical characteristic of the microscope, and hence one can use these values to set the brightness of each individual LED for optimum classification of the microspheres. 
